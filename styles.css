@@ -1,4 +1,4 @@
-body {
+git body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -62,7 +62,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
