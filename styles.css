@@ -3,18 +3,35 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa;
-    color: #333;
+    background-image: url('fondo2.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
 }
 
 header {
-    background: #00796b;
+    background: linear-gradient(45deg, #4CAF50, #00796b);
     color: white;
     padding: 20px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
 }
+
+header h1 {
+    font-family: 'Arial Black', sans-serif;
+    color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+}
+
 
 header::before, header::after {
     content: '';
@@ -41,7 +58,7 @@ header::after {
 }
 
 nav {
-    background: #004d40;
+    background: #333333;
     color: white;
     padding: 15px 0;
 }
@@ -62,7 +79,6 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -73,13 +89,13 @@ main {
     padding: 20px;
     max-width: 800px;
     margin: 30px auto;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
 h2 {
-    color: #00796b;
+    color: #4CAF50;
 }
 
 ul {
@@ -87,7 +103,7 @@ ul {
 }
 
 footer {
-    background: #004d40;
+    background: #333333;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -101,13 +117,27 @@ footer p {
 }
 
 img {
+    display: block; /* Para centrar la imagen */
+    margin: 0 auto 20px; /* Para centrar la imagen y agregar espacio inferior */
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agregando una sombra sutil */
     transition: transform 0.3s ease;
 }
 
 img:hover {
     transform: scale(1.05);
+}
+
+p {
+    color: #eeeeee;
+}
+
+a {
+    color: #ffeb3b;
+}
+
+a:hover {
+    color: #ffffff;
 }
