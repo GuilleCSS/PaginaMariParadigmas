@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -19,7 +21,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Arial Black', sans-serif;
+    font-family: 'Pacifico', cursive;
     color: #ffffff;
     padding: 20px 40px;
     border-radius: 10px;
@@ -78,6 +80,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
@@ -93,12 +96,53 @@ main {
     border-radius: 10px;
 }
 
-h2 {
+main h2 a {
     color: #4CAF50;
+    text-decoration: none;
 }
 
-ul {
-    padding-left: 20px;
+main h2 a:hover {
+    color: #ffeb3b;
+}
+
+main h2 {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+main p, main ul {
+    color: #eeeeee;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
 }
 
 footer {
@@ -115,21 +159,7 @@ footer p {
     margin: 0;
 }
 
-img {
-    display: block;
-    margin: 0 auto 20px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.05);
-}
-
-p {
+p, ul {
     color: #eeeeee;
 }
 
@@ -140,6 +170,7 @@ a {
 a:hover {
     color: #ffffff;
 }
+
 
 .button {
     display: inline-block;
